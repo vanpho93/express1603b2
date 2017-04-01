@@ -6,7 +6,7 @@
     <body>
         <div>
             <% mang.forEach(e => { %>
-                <h1>PHIM</h1>
+                <%- include('partials/row', e) %>
             <% }); %>
         </div>
     </body>

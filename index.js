@@ -17,12 +17,16 @@ app.get('/', (req, res) =>
 
 class Phim {
     constructor(name, id) {
-
+        this.name = name;
+        this.id = id;
     }
 }
 
 const arrPhim = [
-    
+    new Phim('Khoa Pham NodeJS', 'YjVp1Vewcew'),
+    new Phim('Khoa Pham ReactJS', 'YjVp1Vewcew'),
+    new Phim('Khoa Pham React Native', 'YjVp1Vewcew'),
+    new Phim('Khoa Pham iOS', 'YjVp1Vewcew')
 ];
 
 app.get('/show', (req, res) => {
