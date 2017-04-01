@@ -1,16 +1,17 @@
-<%
-    const a = 100;
-    function add(soa, sob) {
-        return soa + sob;
-    }
-    const b = '<h1>React Native</h1>'
-%>
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <title>KhoaPham</title>
     </head>
     <body>
-        <h3>KhoaPham NodeJS <%- name %></h3>
+        <h3>KhoaPham NodeJS</h3>
+        <hr />
+        <div>
+            <%
+                names.forEach(e => {
+                    %><h3>Xin chao <%= e %></h3><%
+                });
+            %>
+        </div>
     </body>
 </html>

@@ -7,5 +7,5 @@ app.set('view engine', 'ejs');
 app.set('views', './views');
 
 app.get('/', (req, res) => 
-    res.render('home', { name: 'Khoa Pham Training' })
+    res.render('home', { names: ['Khoa', 'Pham', 'Pho', 'Node'] })
 );
