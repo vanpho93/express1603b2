@@ -7,11 +7,16 @@
         <h3>KhoaPham NodeJS</h3>
         <hr />
         <div>
-            <%
-                names.forEach(e => {
-                    %><h3>Xin chao <%= e %></h3><%
-                });
-            %>
+            <%names.forEach(e => {%>
+                <h3>Xin chao <%= e %></h3>
+            <%});%>
+
+            <%if (isAdmin) {%>
+                <p>Chao Admin</p>
+            <%} else {%>
+                <p>Chi admin moi co the dung chuc nang nay.</p>
+            <%}%>
         </div>
+        <%- include('partials/footer') %>
     </body>
 </html>

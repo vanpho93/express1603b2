@@ -7,5 +7,8 @@ app.set('view engine', 'ejs');
 app.set('views', './views');
 
 app.get('/', (req, res) => 
-    res.render('home', { names: ['Khoa', 'Pham', 'Pho', 'Node'] })
+    res.render('home',{ 
+            names: ['Khoa', 'Pham', 'Pho', 'Node'], 
+            isAdmin: false 
+        })
 );
