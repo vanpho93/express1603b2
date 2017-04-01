@@ -1,5 +1,7 @@
 const express = require('express');
 
+
+
 const app = express();
 app.listen(3000, () => console.log('Server started!'));
 
@@ -12,3 +14,17 @@ app.get('/', (req, res) =>
             isAdmin: false 
         })
 );
+
+class Phim {
+    constructor(name, id) {
+
+    }
+}
+
+const arrPhim = [
+    
+];
+
+app.get('/show', (req, res) => {
+    res.render('phim', { mang: arrPhim });
+});
